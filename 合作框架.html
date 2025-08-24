@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中阿影视合作：以精品横屏短剧构建新格局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #F0F4F8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .stat-card h3 {
+            color: #003B73;
+        }
+        .stat-card p {
+            color: #0074D9;
+        }
+        .flowchart-step {
+            border-color: #7FDBFF;
+            color: #003B73;
+        }
+        .flowchart-arrow {
+            color: #0074D9;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-center" style="color: #003B73;">跨文化视听新机遇：构建中阿影视合作新格局</h1>
+            <p class="text-center text-md md:text-lg mt-2" style="color: #0074D9;">以精品横屏短剧为桥梁，开创共赢未来</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <section id="market-overview" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-center mb-2" style="color: #003B73;">中国网络视听市场的结构性转型</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">资本并未离场，而是从高成本、长周期的传统影视剧，转向了更高效、更灵活的微短剧赛道。这为我们提供了前所未有的市场机遇。</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="stat-card bg-blue-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-4xl font-bold">505亿</h3>
+                        <p class="text-lg font-semibold mt-2">2024年微短剧市场规模 (元)</p>
+                    </div>
+                    <div class="stat-card bg-blue-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-4xl font-bold">5.76亿</h3>
+                        <p class="text-lg font-semibold mt-2">微短剧用户规模</p>
+                    </div>
+                    <div class="stat-card bg-blue-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-4xl font-bold">>34.9%</h3>
+                        <p class="text-lg font-semibold mt-2">市场同比增长率</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="strategic-pivot" class="mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h2 class="text-2xl font-bold mb-4" style="color: #003B73;">赛道抉择：为何是精品横屏短剧？</h2>
+                    <p class="text-gray-600 mb-6">在微短剧的“野蛮生长”期过后，市场正迅速向“精品化”演进。横屏短剧兼具电影的视觉质感与短视频的明快节奏，符合政策导向和主流平台激励，是规避风险、实现高质量发展的必然选择。</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="contentComparisonChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                     <h2 class="text-2xl font-bold mb-4" style="color: #003B73;">规避核心风险：破解“投流”困局</h2>
+                    <p class="text-gray-600 mb-6">国内微短剧市场最大的隐形成本在于高昂的“投流”费用，它蚕食了绝大部分利润。我们通过与阿联酋平台直接合作，获取其自有流量支持，将资金真正用于内容创作，实现“降本增效”，这是我们最具吸引力的商业优势。</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="uae-market" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-center mb-2" style="color: #003B73;">阿联酋流媒体市场：一片亟待开发的蓝海</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">阿拉伯地区市场并非“落后”，而是处于高消费、高增长的爆发前夜。观众对具有文化共鸣的地域性内容需求旺盛，而中国剧集在主流平台尚属空白，为我们提供了完美的切入点。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3" style="color: #003B73;">Shahid 平台机遇</h3>
+                        <p class="text-gray-700">作为阿拉伯地区领先的流媒体平台，拥有近400万订阅用户。其内容库庞大，但尚无中国剧集。我们可以提供精品横屏短剧，填补其内容多样性的空白，尤其是在斋月等收视高峰期。</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-3" style="color: #003B73;">Yango Play 平台机遇</h3>
+                        <p class="text-gray-700">作为一款基于AI的“超级应用”，Yango Play整合了视频、音乐、游戏等多种服务。我们应提出“内容+”的创新模式，将影视IP与小游戏、AI助手深度捆绑，共建IP生态。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h2 class="text-2xl font-bold text-center mb-8" style="color: #003B73;">三步走战略合作路径</h2>
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0 md:space-x-6">
+
+                    <div class="flex-1 text-center">
+                        <div class="flowchart-step border-2 rounded-lg p-4 bg-blue-50 w-full">
+                            <div class="text-2xl font-bold mb-2">第一步</div>
+                            <h4 class="text-lg font-semibold">IP授权与译制本土化</h4>
+                            <p class="text-sm text-gray-600 mt-2">快速验证市场，建立初步信任</p>
+                        </div>
+                    </div>
+
+                    <div class="flowchart-arrow text-4xl font-light transform rotate-90 md:rotate-0">→</div>
+
+                    <div class="flex-1 text-center">
+                        <div class="flowchart-step border-2 rounded-lg p-4 bg-blue-50 w-full">
+                            <div class="text-2xl font-bold mb-2">第二步</div>
+                            <h4 class="text-lg font-semibold">联合制作 (Co-Production)</h4>
+                            <p class="text-sm text-gray-600 mt-2">深度融合文化，打造爆款IP</p>
+                        </div>
+                    </div>
+
+                    <div class="flowchart-arrow text-4xl font-light transform rotate-90 md:rotate-0">→</div>
+
+                    <div class="flex-1 text-center">
+                        <div class="flowchart-step border-2 rounded-lg p-4 bg-blue-50 w-full">
+                            <div class="text-2xl font-bold mb-2">第三步</div>
+                            <h4 class="text-lg font-semibold">双向分发与生态互通</h4>
+                            <p class="text-sm text-gray-600 mt-2">建立长期生态，实现文化双向流动</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white mt-12 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 中阿跨国影视文化有限公司. 版权所有.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const brilliantBluesPalette = {
+                darkBlue: '#003B73',
+                royalBlue: '#0074D9',
+                skyBlue: '#7FDBFF',
+                lightGrey: '#F0F4F8',
+                white: '#FFFFFF',
+                accentOrange: '#FF851B'
+            };
+
+            function wrapLabel(str, maxWidth) {
+                if (str.length <= maxWidth) {
+                    return str;
+                }
+                const words = str.split(' ');
+                let lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + word).length > maxWidth) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                }
+                lines.push(currentLine.trim());
+                return lines.filter(line => line);
+            }
+            
+            const tooltipTitleCallback = function(tooltipItems) {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                  return label.join(' ');
+                } else {
+                  return label;
+                }
+            };
+
+            const contentComparisonCtx = document.getElementById('contentComparisonChart').getContext('2d');
+            new Chart(contentComparisonCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['传统长剧', '竖屏短剧', '精品横屏短剧'],
+                    datasets: [{
+                        label: '投资成本',
+                        data: [100, 5, 20],
+                        backgroundColor: brilliantBluesPalette.royalBlue,
+                        borderColor: brilliantBluesPalette.darkBlue,
+                        borderWidth: 1,
+                        yAxisID: 'y',
+                    }, {
+                        label: '制作周期 (月)',
+                        data: [36, 1, 9],
+                        backgroundColor: brilliantBluesPalette.skyBlue,
+                        borderColor: brilliantBluesPalette.royalBlue,
+                        borderWidth: 1,
+                        yAxisID: 'y1',
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '不同内容类型投资与周期对比',
+                            color: brilliantBluesPalette.darkBlue
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: tooltipTitleCallback
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            title: {
+                                display: true,
+                                text: '相对成本指数'
+                            }
+                        },
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            title: {
+                                display: true,
+                                text: '周期 (月)'
+                            },
+                            grid: {
+                                drawOnChartArea: false,
+                            },
+                        },
+                    }
+                }
+            });
+
+            const roiCtx = document.getElementById('roiChart').getContext('2d');
+            new Chart(roiCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: [wrapLabel('内容制作成本 (20%)', 16), wrapLabel('营销投流成本 (70%)', 16), wrapLabel('平台及其他成本 (9%)', 16), wrapLabel('净利润 (1%)', 16)],
+                    datasets: [{
+                        label: '成本与利润构成',
+                        data: [20, 70, 9, 1],
+                        backgroundColor: [
+                            brilliantBluesPalette.skyBlue,
+                            brilliantBluesPalette.accentOrange,
+                            brilliantBluesPalette.royalBlue,
+                            brilliantBluesPalette.darkBlue
+                        ],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '国内微短剧分账模式成本构成（示意）',
+                            color: brilliantBluesPalette.darkBlue
+                        },
+                        legend: {
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: tooltipTitleCallback
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
